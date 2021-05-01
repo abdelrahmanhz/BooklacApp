@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_gradient"
+    android:orientation="vertical"
+    tools:context=".ProfileInfo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_btn"
+        android:padding="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_author"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:weightSum="11"
+            >
+
+        <EditText
+            android:id="@+id/book_name_in"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_app_gradient"
+            android:hint="Book name"
+            android:inputType="text"
+            android:maxLength="50"
+            android:maxLines="2"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="15dp"
+            android:textColor="#fff"
+            android:textColorHint="#D5FFFFFF"
+            android:textSize="15dp"
+            />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/round"
+                />
+            <EditText
+                android:id="@+id/book_author_in"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/round_app_gradient"
+                android:hint="Book author"
+                android:inputType="text"
+                android:maxLength="50"
+                android:maxLines="2"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="15dp"
+                android:textColor="#fff"
+                android:textColorHint="#D5FFFFFF"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/book_description_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_author"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_app_gradient"
+            android:hint="Book description"
+            android:inputType="textMultiLine"
+            android:maxLength="250"
+            android:maxLines="6"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="15dp"
+            android:textColor="#fff"
+            android:textColorHint="#D5FFFFFF"
+            android:textSize="15sp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/post_btn_img_container"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/book_description_in"
+            >
+
+            <ImageView
+                android:id="@+id/show_camera"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_baseline_add_circle_outline_24" />
+
+            <ImageView
+            android:id="@+id/book_img_in"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_app_gradient"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+                />
+
+
+            <ImageView
+                android:id="@+id/camera_icon"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:padding="22dp"
+                android:src="@drawable/ic_baseline_add_a_photo_24"
+                android:visibility="gone"
+                />
+
+
+            <Button
+            android:id="@+id/post_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/round_app_gradient"
+            android:layout_alignParentBottom="true"
+            android:text="Post"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:scrollbars="vertical"
+        android:padding="4dp"
+        android:id="@+id/posts_recycler_view"
+        />
+
+</LinearLayout>

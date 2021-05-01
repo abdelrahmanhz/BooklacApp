@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/app_gradient"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/instaLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/usernameUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round"
+        android:hint="name"
+        android:inputType="textPersonName"
+        android:maxLength="15"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:shadowRadius="70"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textColorHint="#92FFFFFF" />
+
+
+    <EditText
+        android:id="@+id/emailUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textColorHint="#92FFFFFF" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+
+    >
+
+
+    <EditText
+        android:id="@+id/passwordUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textColorHint="#92FFFFFF" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/outline_visibility_24"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25dp"
+        android:id="@+id/pass_visi"
+        android:padding="10dp"
+        />
+</RelativeLayout>
+
+    <EditText
+        android:id="@+id/phoneUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:maxLength="12"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:textColorHint="#92FFFFFF" />
+
+    <EditText
+        android:id="@+id/ageUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:background="@drawable/round"
+        android:hint="Age"
+        android:inputType="numberSigned"
+        android:maxLength="2"
+        android:paddingLeft="20dp"
+        android:textSize="18sp"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:textColor="#fff"
+        android:textColorHint="#92FFFFFF" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Sign Up"
+        android:textSize="18sp"
+        android:textColor="#5851DB"
+        android:background="@drawable/round_btn"
+        android:id="@+id/sign_up_btn"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:background="@drawable/round"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        >
+
+        <TextView
+            android:id="@+id/donot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/signin_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In."
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
