@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "877376746813",
+    "firebase_url": "https://booklac.firebaseio.com",
+    "project_id": "booklac",
+    "storage_bucket": "booklac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877376746813:android:46ef71fd409a0532fb4154",
+        "android_client_info": {
+          "package_name": "com.appbook.booklac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877376746813-kahr510r797idnal4bmhugu979bomsem.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appbook.booklac",
+            "certificate_hash": "f8eeb295e5098d753004591c4b856b1f18f5f548"
+          }
+        },
+        {
+          "client_id": "877376746813-gr3k2mv4jb2mq0hfpt4bm950rb8gvim3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqYf6E2aHsBq0ofWXI0N4V9tg5PjI_47o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "877376746813-gr3k2mv4jb2mq0hfpt4bm950rb8gvim3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
